@@ -3,7 +3,8 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-using MyRag.Application.Chat.Queries;
+using MyRag.Application.Chat.Commands.EmbeddingPdfs;
+using MyRag.Application.Chat.Queries.SendMessages;
 
 namespace MyRag.Api.Controllers;
 
@@ -18,14 +19,24 @@ public class ChatController : ApiController
         _mediator = mediator;
     }
 
-    [HttpGet("hello")]
-    public async Task<IActionResult> Hello()
+    [HttpGet("send")]
+    public async Task<IActionResult> SendMessage(string message, int topK)
     {
-        var query = new HelloQuery();
+        var query = new SendMessagesQuery(message, topK);
 
         var result = await _mediator.Send(query);
 
         return result.Match(Ok, Problem);
+    }
+
+    [HttpPost("update")]
+    public async Task<IActionResult> UpdateEmbeddings(string filePath, bool forceUpdate)
+    {
+        var command = new EmbeddingPdfsCommand(filePath, forceUpdate);
+
+        var result = await _mediator.Send(command);
+
+        return result.Match(unit => Ok(unit), Problem);
     }
 }
 

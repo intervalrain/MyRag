@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRag.Domain", "MyRag.Domai
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRag.Infrastructure", "MyRag.Infrastructure\MyRag.Infrastructure.csproj", "{00E8AA87-AE2B-4424-A671-7E308F4544C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRag.Util", "MyRag.Util\MyRag.Util.csproj", "{3D41B29A-90C3-42BB-9E8C-6503E91DAE1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{00E8AA87-AE2B-4424-A671-7E308F4544C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00E8AA87-AE2B-4424-A671-7E308F4544C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00E8AA87-AE2B-4424-A671-7E308F4544C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D41B29A-90C3-42BB-9E8C-6503E91DAE1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D41B29A-90C3-42BB-9E8C-6503E91DAE1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D41B29A-90C3-42BB-9E8C-6503E91DAE1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D41B29A-90C3-42BB-9E8C-6503E91DAE1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

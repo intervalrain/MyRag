@@ -4,4 +4,3 @@ public interface IExtractor
 {
     Task<string> Extract(Stream stream);
 }
-
