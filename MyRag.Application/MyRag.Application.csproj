@@ -17,10 +17,14 @@
     <None Remove="Common\" />
     <None Remove="Chat\" />
     <None Remove="Chat\Queries\" />
+    <None Remove="Common\RagChain\" />
+    <None Remove="Common\RagChain\Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\" />
     <Folder Include="Chat\" />
     <Folder Include="Chat\Queries\" />
+    <Folder Include="Common\RagChain\" />
+    <Folder Include="Common\RagChain\Interfaces\" />
   </ItemGroup>
 </Project>
